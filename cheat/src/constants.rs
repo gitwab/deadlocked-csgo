@@ -3,12 +3,12 @@ pub mod cs2 {
 
     pub const PROCESS_NAME: &str = "csgo_linux64";
     pub const CLIENT_LIB: &str = "client_client.so";
-    pub const ENGINE_LIB: &str = "engine.so";
-    pub const TIER0_LIB: &str = "tier0.so";
-    pub const INPUT_LIB: &str = "inputsystem.so";
-    pub const SDL_LIB: &str = "SDL2.so.0";
-    pub const SCHEMA_LIB: &str = "schemasystem.so";
-    pub const PHYSICS_LIB: &str = "vphysics.so";
+    pub const ENGINE_LIB: &str = "engine_client.so";
+    pub const TIER0_LIB: &str = "libtier0_client.so";
+    pub const INPUT_LIB: &str = "inputsystem_client.so";
+    pub const SDL_LIB: &str = "libSDL2.so.0";
+    pub const SCHEMA_LIB: &str = "schemasystem_client.so";
+    pub const PHYSICS_LIB: &str = "vphysics_client.so";
 
     pub const LIBS: [&str; 6] = [
         CLIENT_LIB, ENGINE_LIB, TIER0_LIB, INPUT_LIB, SDL_LIB, SCHEMA_LIB,
