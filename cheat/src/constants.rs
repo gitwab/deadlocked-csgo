@@ -1,14 +1,14 @@
 pub mod cs2 {
     use shared::Weapon;
 
-    pub const PROCESS_NAME: &str = "cs2";
-    pub const CLIENT_LIB: &str = "libclient.so";
-    pub const ENGINE_LIB: &str = "libengine2.so";
-    pub const TIER0_LIB: &str = "libtier0.so";
-    pub const INPUT_LIB: &str = "libinputsystem.so";
-    pub const SDL_LIB: &str = "libSDL3.so.0";
-    pub const SCHEMA_LIB: &str = "libschemasystem.so";
-    pub const PHYSICS_LIB: &str = "libvphysics2.so";
+    pub const PROCESS_NAME: &str = "csgo_linux64";
+    pub const CLIENT_LIB: &str = "client_client.so";
+    pub const ENGINE_LIB: &str = "engine.so";
+    pub const TIER0_LIB: &str = "tier0.so";
+    pub const INPUT_LIB: &str = "inputsystem.so";
+    pub const SDL_LIB: &str = "SDL2.so.0";
+    pub const SCHEMA_LIB: &str = "schemasystem.so";
+    pub const PHYSICS_LIB: &str = "vphysics.so";
 
     pub const LIBS: [&str; 6] = [
         CLIENT_LIB, ENGINE_LIB, TIER0_LIB, INPUT_LIB, SDL_LIB, SCHEMA_LIB,
@@ -32,17 +32,17 @@ pub mod cs2 {
     ];
 
     pub mod class {
-        pub const PLAYER_CONTROLLER: &str = "19CCSPlayerController";
+        pub const PLAYER_CONTROLLER: &str = "CCSPlayer";
 
-        pub const PLANTED_C4: &str = "11C_PlantedC4";
-        pub const INFERNO: &str = "9C_Inferno";
-        pub const SMOKE: &str = "24C_SmokeGrenadeProjectile";
-        pub const MOLOTOV: &str = "19C_MolotovProjectile";
-        pub const FLASHBANG: &str = "21C_FlashbangProjectile";
-        pub const HE_GRENADE: &str = "21C_HEGrenadeProjectile";
-        pub const DECOY: &str = "17C_DecoyProjectile";
+        pub const PLANTED_C4: &str = "CPlantedC4";
+        pub const INFERNO: &str = "CInferno";
+        pub const SMOKE: &str = "CSmokeGrenadeProjectile";
+        pub const MOLOTOV: &str = "CMolotovProjectile";
+        pub const FLASHBANG: &str = "CFlashbangProjectile";
+        pub const HE_GRENADE: &str = "CHEGrenadeProjectile";
+        pub const DECOY: &str = "CDecoyProjectile";
 
-        pub const CHICKEN: &str = "9C_Chicken";
+        pub const CHICKEN: &str = "CChicken";
     }
 }
 
